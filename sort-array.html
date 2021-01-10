@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sắp xếp mảng</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let array2=[8,2,12,20,18,31,45,68,69,99];
+    let temp ="";
+    for (i=0;i < array2.length/2;i++){
+        temp=array2[i];
+        array2[i] =array2[array2.length-i-1];
+        array2[array2.length-i-1]= temp;
+    }
+    document.write(array2);
+
+    let value=prompt("Enter the number: ");
+    let flag=true;
+    for (j=0;j<array2.length;j++){
+        if (value == array2[j]){
+            alert("V is in the array");
+
+        }
+    }alert("V is not in the array");
+</script>

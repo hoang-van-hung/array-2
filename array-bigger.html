@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển thị phần tử lớn hơn 10</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    // Phần tử lớn hơn 10 trong mảng
+    let array=[9,12,10,31,45,32,20,63,78,93];
+    document.write("Array : "+array + "<br>");
+    let str="";
+    for (let i = 0; i <array.length ; i++) {
+        if (array[i] > 10){
+            str += array[i]+ ",";
+        }
+    }
+    document.write("Lager 10 in array: " + str+ "<br>");
+
+    //Phần tử lớn nhất và vị trí của nó
+    let max=array[0]
+    for (let j = 1; j <array.length ; j++) {
+        if (max < array[j]){
+            max=array[j];
+            index= j;
+        }
+    }
+    document.write("Max in array : "+ max+ "<br>");
+    document.write("Max position : "+index+ "<br>");
+
+    //Tổng các phần tử và trung bình cộng của chúng
+    let total=0;
+    let average="";
+    for (k=0;k <array.length;k++){
+        total +=array[k];
+        average=total/array.length;
+
+    }
+    document.write("Total of array : "+ total + "<br>");
+    document.write("Average of array : "+ average);
+</script>
